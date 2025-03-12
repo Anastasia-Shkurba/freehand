@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -14,6 +14,7 @@ body {
   align-items: center;
   justify-content: start;
   gap: 13px;
+  padding: 23px 0;
 }
 
 .header::after {
@@ -38,6 +39,15 @@ body {
   font-size: 35px;
   line-height: 35px;
   color: #16133D;
+  margin: 0;
+}
+
+.logo-name--footer {
+  color: #fff;
+}
+
+.main {
+  margin: 100px auto;
 }
 
 .main__title {
@@ -64,9 +74,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -76,5 +86,123 @@ body {
   border-radius: 8px;
   border: 1px solid #E5EAF4;
   padding: 40px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
+.card:hover {
+  border: 1px solid #3DB370;
+}
+
+.card__middle-shadow {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__middle-shadow {
+  fill: #E1F4F5;
+}
+
+.card__light-shadow {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__light-shadow {
+  fill: #F4FEFF;
+}
+
+.card__dark-shadow {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__dark-shadow {
+  fill: #CAEFF2;
+}
+
+.card__outline {
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__outline {
+  fill: #52C29D;
+}
+
+.card__img {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E8F0FC;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.card__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21.3px;
+  letter-spacing: 0.2px;
+  color: #16133D;
+  margin: 30px 0 15px;
+}
+
+.card__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #16133D;
+  max-width: 275px;
+  margin: 0 0 30px;
+}
+
+.card__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #3DB370;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #16133D;
+  padding: 40px 0;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.footer__social {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+
+.social-item {
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #EFEEF3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item__icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  fill: #0D0D0D;
+}
+
+.social-item:hover .footer-item__icon {
+  fill: #3DB370;
+}
